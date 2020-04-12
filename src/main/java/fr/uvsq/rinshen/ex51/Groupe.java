@@ -1,8 +1,13 @@
 package fr.uvsq.rinshen.ex51;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public abstract class Groupe {
+public abstract class Groupe implements Serializable {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -1072913158732325451L;
 	private ArrayList<Personnel> membres;
 	
 	public Groupe() {

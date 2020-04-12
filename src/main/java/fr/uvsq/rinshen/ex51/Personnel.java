@@ -1,15 +1,20 @@
 package fr.uvsq.rinshen.ex51;
 
 import java.util.ArrayList;
+import java.io.Serializable;
 import java.time.LocalDate;
 import java.time.Month;
 /**
  * Hello world!
  *
  */
-public final class Personnel
+public final class Personnel implements Serializable
 {
-    private final String nom;
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = -7650298502994864573L;
+	private final String nom;
     private final String prenom;
     private final String fonction;
     private final LocalDate date_naissance;
@@ -27,7 +32,7 @@ public final class Personnel
         	prenom=Prenom;
         	
         	fonction="nom spécifiée";
-        	date_naissance=LocalDate.of(0, Month.JANUARY, 0);
+        	date_naissance=LocalDate.of(0, Month.JANUARY, 1);
         	num_telephone=new ArrayList<String>();
         }
     	
@@ -58,4 +63,42 @@ public final class Personnel
     	date_naissance=builder.date_naissance;
     	num_telephone=builder.num_telephone;
     }
+
+	public String getNom() {
+		return nom;
+	}
+
+	public String getPrenom() {
+		return prenom;
+	}
+
+	public String getFonction() {
+		return fonction;
+	}
+
+	public LocalDate getDate_naissance() {
+		return date_naissance;
+	}
+
+	public ArrayList<String> getNum_telephone() {
+		return num_telephone;
+	}
+	
+	@Override
+	public boolean equals(Object obj) {
+		if(!(obj instanceof Personnel)){
+			System.out.println("Pas de meme type");
+			return false;
+		}
+		Personnel test=(Personnel)obj;
+		if(!this.num_telephone.equals(test.getNum_telephone())) {
+			System.out.println("Pas de meme numéro de téléphone");
+			return false;
+		}
+		if(!this.nom.equals(test.getNom())){System.out.println("Pas de meme nom"); return false;}
+		if(!this.prenom.equals(test.getPrenom())){System.out.println("Pas de meme prénom"); return false;}
+		if(!this.fonction.equals(test.getFonction())){System.out.println("Pas de meme fonction"); return false;}
+		if(!this.date_naissance.equals(test.getDate_naissance())){System.out.println("Pas de meme date de naissance"); return false;}
+		return true;
+	}
 }
