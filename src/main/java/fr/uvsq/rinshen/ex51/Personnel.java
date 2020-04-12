@@ -87,18 +87,24 @@ public final class Personnel implements Serializable
 	@Override
 	public boolean equals(Object obj) {
 		if(!(obj instanceof Personnel)){
-			System.out.println("Pas de meme type");
 			return false;
 		}
 		Personnel test=(Personnel)obj;
 		if(!this.num_telephone.equals(test.getNum_telephone())) {
-			System.out.println("Pas de meme numéro de téléphone");
 			return false;
 		}
-		if(!this.nom.equals(test.getNom())){System.out.println("Pas de meme nom"); return false;}
-		if(!this.prenom.equals(test.getPrenom())){System.out.println("Pas de meme prénom"); return false;}
-		if(!this.fonction.equals(test.getFonction())){System.out.println("Pas de meme fonction"); return false;}
-		if(!this.date_naissance.equals(test.getDate_naissance())){System.out.println("Pas de meme date de naissance"); return false;}
+		if(!this.nom.equals(test.getNom())){
+			return false;
+		}
+		if(!this.prenom.equals(test.getPrenom())){
+			return false;
+		}
+		if(!this.fonction.equals(test.getFonction())){
+			return false;
+		}
+		if(!this.date_naissance.equals(test.getDate_naissance())){
+			return false;
+		}
 		return true;
 	}
 }

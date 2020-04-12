@@ -17,4 +17,8 @@ public abstract class Groupe implements Serializable {
 	public void ajoute_membre(Personnel nouveau) {
 		membres.add(nouveau);
 	}
+	
+	public ArrayList<Personnel> getMembres() {
+		return membres;
+	}
 }
