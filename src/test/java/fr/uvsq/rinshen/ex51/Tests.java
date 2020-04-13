@@ -4,7 +4,6 @@ import java.time.Month;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.fail;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
@@ -103,7 +102,7 @@ public class Tests {
 			System.out.println("Fichier introuvable");
 			e.printStackTrace();
 		} catch (IOException e) {
-			System.out.println("Erreur d'écriture");
+			System.out.println("Erreur de lecture");
 			e.printStackTrace();
 		} catch (ClassNotFoundException e) {
 			System.out.println("Fichier incorrect");
@@ -153,7 +152,7 @@ public class Tests {
 
 		//écriture
 		try {
-			sortie = new ObjectOutputStream(new BufferedOutputStream(new FileOutputStream(new File("test_groupe_feuille"))));
+			sortie = new ObjectOutputStream(new BufferedOutputStream(new FileOutputStream(new File("test_groupe_composite"))));
 			sortie.writeObject(c1);
 			sortie.close();
 		} catch (FileNotFoundException e) {
@@ -166,14 +165,14 @@ public class Tests {
 
 		//lecture
 		try {
-			entree = new ObjectInputStream(new BufferedInputStream(new FileInputStream(new File("test_groupe_feuille"))));
+			entree = new ObjectInputStream(new BufferedInputStream(new FileInputStream(new File("test_groupe_composite"))));
 			c2=(GroupeComposite)entree.readObject();
 			entree.close();
 		} catch (FileNotFoundException e) {
 			System.out.println("Fichier introuvable");
 			e.printStackTrace();
 		} catch (IOException e) {
-			System.out.println("Erreur d'écriture");
+			System.out.println("Erreur de lecture");
 			e.printStackTrace();
 		} catch (ClassNotFoundException e) {
 			System.out.println("Fichier incorrect");
