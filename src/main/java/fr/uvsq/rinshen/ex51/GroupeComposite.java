@@ -18,6 +18,10 @@ public class GroupeComposite extends Groupe {
 		sousGroupes.add(groupe);
 	}
 	
+	public ArrayList<Groupe> getSousGroupes() {
+		return sousGroupes;
+	}
+	
 	@Override
 	public boolean equals(Object obj) {
 		if (!(obj instanceof GroupeComposite)) {

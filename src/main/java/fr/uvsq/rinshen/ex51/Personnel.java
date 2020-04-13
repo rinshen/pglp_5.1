@@ -85,6 +85,10 @@ public final class Personnel implements Serializable {
 	public ArrayList<String> getNumTelephone() {
 		return numTelephone;
 	}
+	
+	public void ajouteTelephone(String num) {
+		numTelephone.add(num);
+	}
 
 	@Override
 	public boolean equals(Object obj) {
