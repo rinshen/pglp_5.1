@@ -15,7 +15,7 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 
-public class Tests {
+public class TestPersonnel {
 	@Test
 	public void SerialisationPersonnel(){
 		//initialisation
@@ -147,8 +147,8 @@ public class Tests {
 		g2.ajoute_membre(p3);
 		g2.ajoute_membre(p4);
 		
-		c1.ajoute_groupe(g1);
-		c1.ajoute_groupe(g2);
+		c1.ajouteGroupe(g1);
+		c1.ajouteGroupe(g2);
 
 		//écriture
 		try {

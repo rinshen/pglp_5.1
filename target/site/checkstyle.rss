@@ -25,9 +25,9 @@ under the License.
     <language>en-us</language>
     <copyright>&#169;2020</copyright>
     <item>
-      <title>File: 9,
+      <title>File: 1,
              Errors: 0,
-             Warnings: 590,
+             Warnings: 0,
              Infos: 0
       </title>
             <link>http://maven.apache.org/checkstyle.html</link>
@@ -46,125 +46,13 @@ under the License.
           <tbody>
                           <tr>
                 <td>
-                  <a href="http://maven.apache.org/checkstyle.html#fr.uvsq.rinshen.ex51.GroupeFeuille.java">fr/uvsq/rinshen/ex51/GroupeFeuille.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  39
-                </td>
-                <td>
-                  0
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="http://maven.apache.org/checkstyle.html#fr.uvsq.rinshen.ex51.GroupeComposite.java">fr/uvsq/rinshen/ex51/GroupeComposite.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  61
-                </td>
-                <td>
-                  0
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="http://maven.apache.org/checkstyle.html#fr.uvsq.rinshen.ex51.GroupeCompositeDAO.java">fr/uvsq/rinshen/ex51/GroupeCompositeDAO.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  78
-                </td>
-                <td>
-                  0
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="http://maven.apache.org/checkstyle.html#fr.uvsq.rinshen.ex51.PersonnelDAO.java">fr/uvsq/rinshen/ex51/PersonnelDAO.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  78
-                </td>
-                <td>
-                  0
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="http://maven.apache.org/checkstyle.html#fr.uvsq.rinshen.ex51.DataAccessObject.java">fr/uvsq/rinshen/ex51/DataAccessObject.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  4
-                </td>
-                <td>
-                  0
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="http://maven.apache.org/checkstyle.html#fr.uvsq.rinshen.ex51.GroupeFeuilleDAO.java">fr/uvsq/rinshen/ex51/GroupeFeuilleDAO.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  78
-                </td>
-                <td>
-                  0
-                </td>
-              </tr>
-                          <tr>
-                <td>
                   <a href="http://maven.apache.org/checkstyle.html#fr.uvsq.rinshen.ex51.Personnel.java">fr/uvsq/rinshen/ex51/Personnel.java</a>
                 </td>
                 <td>
                   0
                 </td>
                 <td>
-                  197
-                </td>
-                <td>
                   0
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="http://maven.apache.org/checkstyle.html#fr.uvsq.rinshen.ex51.FabriqueDAO.java">fr/uvsq/rinshen/ex51/FabriqueDAO.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  24
-                </td>
-                <td>
-                  0
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="http://maven.apache.org/checkstyle.html#fr.uvsq.rinshen.ex51.Groupe.java">fr/uvsq/rinshen/ex51/Groupe.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  31
                 </td>
                 <td>
                   0

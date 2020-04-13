@@ -1,15 +1,15 @@
 package fr.uvsq.rinshen.ex51;
 
-public class FabriqueDAO {
-	public static GroupeCompositeDAO creerCompositeDAO() {
-		return new GroupeCompositeDAO();
+public class FabriqueDao {
+	public static GroupeCompositeDao creerCompositeDao() {
+		return new GroupeCompositeDao();
 	}
 	
-	public static GroupeFeuilleDAO creerFeuilleDAO() {
-		return new GroupeFeuilleDAO();
+	public static GroupeFeuilleDao creerFeuilleDao() {
+		return new GroupeFeuilleDao();
 	}
 	
-	public static PersonnelDAO creerPersonnelDAO() {
-		return new PersonnelDAO();
+	public static PersonnelDao creerPersonnelDao() {
+		return new PersonnelDao();
 	}
 }
